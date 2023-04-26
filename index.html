@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ff0000"/>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <script>
+        //if browser support service worker
+        if('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('sw.js');
+        };
+      </script>
+    <title>Flex-it</title>
+
+</head>
+<body>
+   
+
+    <header id="myHeader">
+        <img id="logo" class="logo" src="images/logo-light.png" alt="">
+
+        <ul class="navlist">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <i id="close" class="ri-close-line"></i>
+        </ul>
+        <div class="icones-menu">
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <i class="ri-search-line"></i>
+            <i class="ri-sun-line" id="dark-mode"></i>
+        </div>
+        
+    </header>
+    <div id="particles-js">
+    </div>
+    <section id="hero-section" class="hero-section">
+        <div class="hero-text">
+            <div class="icones">
+                <a href="#"><i class="ri-facebook-line"></i></a>
+                <a href="#"><i class="ri-youtube-fill"></i></a>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+            </div>
+            <div class="hero-content">
+                <p>IT SOLUTIONS</p>
+                <h1>Providing The Best Services & IT <span>Solutions</span></h1>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto dolorum inventore totam adipisci</h4>
+                <div class="btns">
+                    <button>Start Now</button>
+                    <div id="play"><i class='bx bx-play' ></i></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="images/hero.png" alt="">
+           
+        </div>
+    </section>
+
+   <!-- ------------------------Services-----------------------------------------  -->
+ <section class="services" id="services">
+     <div class="services-header">
+        <div class="services-left">
+            <div>
+                <h4>SERVICES</h4>
+                <h2>Services We Offer</h2>
+                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Omnis Id Atque Dignissimos Repellat Quae Ullam.</p>
+            </div>
+        </div>
+        <div>
+            <button>See All Services <i id="right-bow-button" class="ri-arrow-right-line"></i></button>
+        </div>
+    </div>
+    <div class="services-cards">
+        <div class="cards">
+            <i id="icone-head" class="ri-window-line"></i>           
+            <h3>Web Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit eaque facilis sapiente iusto.</p>
+            <a href="#">Read More <i id="arrow" class="ri-arrow-right-line"></i></a>
+            <div class="overlay"></div>
+        </div>
+        <div class="cards">
+            <i id="icone-head" class="ri-store-line"></i>        
+            <h3>Digital Marketing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit eaque facilis sapiente iusto.</p>
+            <a href="#">Read More <i id="arrow" class="ri-arrow-right-line"></i></a>
+            <div class="overlay"></div>
+        </div>
+        <div class="cards">
+            <i id="icone-head" class="ri-instance-line"></i>
+            <h3>SaaS Products</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit eaque facilis sapiente iusto.</p>
+            <a href="#">Read More <i id="arrow" class="ri-arrow-right-line"></i></a>
+            <div class="overlay"></div>
+        </div>
+        <div class="cards">
+            <i id="icone-head" class="ri-user-line"></i>
+            <h3>Apps Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit eaque facilis sapiente iusto.</p>
+            <a href="#">Read More <i id="arrow" class="ri-arrow-right-line"></i></a>
+            <div class="overlay"></div>
+        </div>
+        <div class="cards">
+            <i id="icone-head" class="ri-search-eye-line"></i>
+            <h3>SEO Services</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit eaque facilis sapiente iusto.</p>
+            <a href="#">Read More <i id="arrow" class="ri-arrow-right-line"></i></a>
+            <div class="overlay"></div>
+        </div>
+        <div class="cards">
+            <i id="icone-head" class='bx bxs-chess'></i>
+            <h3>Data Analysis</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit eaque facilis sapiente iusto.</p>
+            <a href="#">Read More <i id="arrow" class="ri-arrow-right-line"></i></a>
+            <div class="overlay"></div>
+        </div>
+
+    </div>
+</section>
+      <!-- ------------------------End-Services-----------------------------------------  -->
+      <!-- ------------------------About-us-----------------------------------------  -->
+ <section class="about-us" id="about">
+            <div class="about-us-text">
+                <h5>ABOUT US</h5>
+                <h2>Trusted By Worldwide Clients Since <span>1980.</span></h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, aliquam est! rerum inventore animi at iusto totam sunt accusamus quia</p>
+                <div class="grid">
+                    <div class="flex">
+                            <i class="ri-medal-fill"></i>
+                        <div class="right">
+                            <h6>First On Field</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste</p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <i class="ri-gamepad-line"></i>
+                         <div class="right">
+                            <h6>Easy To Reach</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste</p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <i class="ri-treasure-map-line"></i>
+                        <div class="right">
+                            <h6>Worldwide Services</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste</p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <i class="ri-24-hours-line"></i>
+                        <div class="right">
+                            <h6>24/7 Support</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iste</p>
+                        </div>
+                    </div>
+                  
+                </div>
+                <button>Get In Touch</button>
+            </div>
+            <div class="about-us-image">
+                <img src="images/3.png" alt="">
+            </div>
+</section>
+      <!-- ------------------------END-About-us-----------------------------------------  -->
+      <!-- ------------------------START CHOOSE US-----------------------------------------  -->
+      
+    <section class="choose-us" id="chose">
+        <div class="choose-us-image">
+            <img src="images/1.png" alt="">
+        </div>
+        <div class="choose-us-text">
+            <h5>WHY CHOOSE US</h5>
+            <h2>Why Our Customers <br> Choose <span>Working</span> With Us</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, aliquam est! rerum inventore animi at iusto totam sunt accusamus quia</p>
+            <div class="flex">
+                <h3>01.</h3>
+                <div>
+                    <h4>Latest Technologies</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis dolore obcaecati.</p>
+                </div>
+            </div>
+            <div class="flex">
+                <h3>02.</h3>
+                <div>
+                    <h4>Uniqe Solutions</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis dolore obcaecati.</p>
+                </div>
+            </div>
+            <div class="flex">
+                <h3>03.</h3>
+                <div>
+                    <h4>Powerful Strategies</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis dolore obcaecati.</p>
+                </div>
+            </div>
+            <button>Get In Touch</button>
+        </div>
+    </section>
+      <!-- ------------------------END CHOOSE US-----------------------------------------  -->
+      <!-- ------------------------Start Projects-----------------------------------------  -->
+      <section class="projects">
+        <div class="cards">
+            <div class="card">
+                <i class="ri-projector-line"></i>
+                <h3>750+</h3>
+                <p>Finished Projects</p>
+            </div>
+            <div class="card">
+                <i class="ri-article-line"></i>
+                <h3>23+</h3>
+                <p>Created Jobs</p>
+            </div>
+            <div class="card">
+                <i class="ri-user-line"></i>
+                <h3>200+</h3>
+                <p>Happy Customers</p>
+            </div>
+            <div class="card">
+                <i class="ri-focus-3-line"></i>
+                <h3>28 +</h3>
+                <p>Years Of Exprience</p>
+            </div>
+        </div>
+      </section>
+      <!-- ------------------------End Projects-----------------------------------------  -->
+      <!-- ------------------------Start Portfolio-----------------------------------------  -->
+      <section class="portfolio" id="portfolio">
+        <div class="services-header">
+            <div class="services-left">
+                <div>
+                    <h4>PORTFOLIO</h4>
+                    <h2>Awesome Portfolio</h2>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Omnis Id Atque Dignissimos Repellat Quae Ullam.</p>
+                </div>
+            </div>
+            <div>
+                <button>See All Services <i id="right-bow-button" class="ri-arrow-right-line"></i></button>
+            </div>
+        </div>
+        <div class="gallery">
+            <ul>
+                <li class="active">All</li>
+                <li>Mobile</li>
+                <li>Cloud</li>
+                <li>Data Analysis</li>
+                <li>Hosting</li>
+                <li>Other Category</li>
+            </ul>
+            <div class="images">
+                <div class="card">
+                    <img src="images/img1.jpg" alt="">
+                    <div class="overlay2">
+                        <i class="ri-eye-line"></i>
+                        <p class="category">Mobile</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/img2.jpg" alt="">
+                    <div class="overlay2">
+                        <i class="ri-eye-line"></i>
+                        <p class="category">Cloud</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/img3.jpg" alt="">
+                    <div class="overlay2">
+                        <i class="ri-eye-line"></i>
+                        <p class="category">Data Analysis</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/img4.jpg" alt="">
+                    <div class="overlay2">
+                        <i class="ri-eye-line"></i>
+                        <p class="category">Hosting</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/img5.jpg" alt="">
+                    <div class="overlay2">
+                        <i class="ri-eye-line"></i>
+                        <p class="category">SEO</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/img6.jpg" alt="">
+                    <div class="overlay2">
+                        <i class="ri-eye-line"></i>
+                        <p class="category">Other Category</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- ------------------------End Portfolio-----------------------------------------  -->
+      <!-- ------------------------start trusted-----------------------------------------  -->
+      <section class="trusted">
+        <h2>Trusted By Over 500 Clients Around The World</h2>
+        <div class="slider">
+            <div class="slick_slide">
+                <div class="slide"><img src="images/1-white.png" alt=""></div>
+                <div class="slide"><img src="images/2-white.png" alt=""></div>
+                <div class="slide"><img src="images/3-white.png" alt=""></div>
+                <div class="slide"><img src="images/4-white.png" alt=""></div>
+                <div class="slide"><img src="images/5-white.png" alt=""></div>
+                <div class="slide"><img src="images/6-white.png" alt=""></div>
+                <div class="slide"><img src="images/7-white.png" alt=""></div>
+            </div>
+          </div>
+      </section>
+      <!-- ------------------------end trusted-----------------------------------------  -->
+      <!-- ------------------------Start Pricing-----------------------------------------  -->
+      <section class="pricing" id="pricing">
+        <div class="services-header">
+            <div class="services-left">
+                <div>
+                    <h4>PRICING PLANS</h4>
+                    <h2>Affordable Pricing Plans</h2>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Omnis Id Atque Dignissimos Repellat Quae Ullam.</p>
+                </div>
+            </div>
+            <div>
+                <button>See All Services <i id="right-bow-button" class="ri-arrow-right-line"></i></button>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <i class="ri-computer-line"></i>
+                <h4>Free Plan</h4>
+                <h2>00<span> $</span></h2>
+                <h6>Per Project</h6>
+                <div class="line"></div>
+                <p>150 Lorem, Ipsum Dolor.</p>
+                <p>20 Lorem Ipsum Dolor Sit .</p>
+                <p>Lorem Ipsum Dolor Sit.</p>
+                <p>Free Lorem Ipsum Dolor .</p>
+                <p>Added Lorem Ipsum Dolor.</p>
+                <button>Select Plan</button>
+            </div>
+            <div class="card">
+                <i class="ri-honour-line"></i>
+                <h4>Standerd Plan</h4>
+                <h2>85<span> $</span></h2>
+                <h6>Per Project</h6>
+                <div class="line"></div>
+                <p>150 Lorem, Ipsum Dolor.</p>
+                <p>20 Lorem Ipsum Dolor Sit .</p>
+                <p>Lorem Ipsum Dolor Sit.</p>
+                <p>Free Lorem Ipsum Dolor .</p>
+                <p>Added Lorem Ipsum Dolor.</p>
+                <button>Select Plan</button>
+            </div>
+            <div id="popular" class="card">
+                <i class="ri-instance-line"></i>
+                <h4>Pro Plan</h4>
+                <h2>150<span> $</span></h2>
+                <h6>Per Project</h6>
+                <div class="line"></div>
+                <p>150 Lorem, Ipsum Dolor.</p>
+                <p>20 Lorem Ipsum Dolor Sit .</p>
+                <p>Lorem Ipsum Dolor Sit.</p>
+                <p>Free Lorem Ipsum Dolor .</p>
+                <p>Added Lorem Ipsum Dolor.</p>
+                <button>Select Plan</button>
+            </div>
+            <div class="card">
+                <i class="ri-shield-flash-line"></i>
+                <h4>Ultimate plan</h4>
+                <h2>210<span> $</span></h2>
+                <h6>Per Project</h6>
+                <div class="line"></div>
+                <p>150 Lorem, Ipsum Dolor.</p>
+                <p>20 Lorem Ipsum Dolor Sit .</p>
+                <p>Lorem Ipsum Dolor Sit.</p>
+                <p>Free Lorem Ipsum Dolor .</p>
+                <p>Added Lorem Ipsum Dolor.</p>
+                <button>Select Plan</button>
+            </div>
+        </div>
+      </section>
+      <!-- ------------------------end Pricing-----------------------------------------  -->  
+      <!-- ------------------------Start Testmonials-----------------------------------------  -->  
+      <section class="faqs" id="faqs">
+        <div class="faq-image">
+            <img src="images/faq-illustration.png" alt="">
+        </div>
+        <div class="faq-content">
+            <h4>FAQS</h4>
+            <h2>Frequently Asked Questions</h2>
+                <div class="question">
+                    <div class="flex">
+                        <h3>Are Your Service Easy To Use?</h3>
+                        <i class="ri-add-line add"></i>
+                    </div>
+                    <div class="answr">
+                        <p>mhmd, Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table.</p>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="flex">
+                        <h3>Will I Receive Future Updates?</h3>
+                        <i class="ri-add-line add"></i>
+                    </div>
+                    <div class="answr">
+                        <p>mhmd, Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table.</p>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="flex">
+                        <h3>Is This Services Work In My Country</h3>
+                        <i class="ri-add-line add"></i>
+                    </div>
+                    <div class="answr">
+                        <p>mhmd, Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table.</p>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="flex">
+                        <h3>How Much I Will Pay</h3>
+                        <i class="ri-add-line add"></i>
+                    </div>
+                    <div class="answr">
+                        <p>mhmd, Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table.</p>
+                    </div>
+                </div>
+        </div>
+
+      </section>
+      <!-- ------------------------End Testmonials-----------------------------------------  -->  
+      <!-- ------------------------Start Blog-----------------------------------------  -->  
+        <section class="blog" id="blog">
+            <div class="services-header">
+                <div class="services-left">
+                    <div>
+                        <h4>BLOG</h4>
+                        <h2>Latest News</h2>
+                    </div>
+                </div>
+                <div>
+                    <button>See All Posts<i id="right-bow-button" class="ri-arrow-right-line"></i></button>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-up">
+                        <img src="images/blog1.jpg" alt="">
+                        <div class="overlay3">
+                            <p>05 oct 2022</p>
+                        </div>
+                    </div>
+                    <div class="card-down">
+                        <div class="flex">
+                            <div class="flex">
+                                <i class="ri-save-line"></i>
+                                <p>Hosting</p>
+                            </div>
+                            <div class="line"></div>
+                            <div class="flex">
+                                <i class="ri-user-3-line"></i>
+                                <p>Allan Moore</p>
+                            </div>
+                        </div>
+                        <h3>How Litespeed Technology Works To Speed Up Your Site</h3>
+                        <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates molestiae</h5>
+                        <a href="">Read More <i id="right-blog" class="ri-arrow-right-line"></i></a>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-up">
+                        <img src="images/blog2.jpg" alt="">
+                        <div class="overlay3">
+                            <p>15 sep 2022</p>
+                        </div>
+                    </div>
+                    <div class="card-down">
+                        <div class="flex">
+                            <div class="flex">
+                                <i class="ri-save-line"></i>
+                                <p>Web Dev</p>
+                            </div>
+                            <div class="line"></div>
+                            <div class="flex">
+                                <i class="ri-user-3-line"></i>
+                                <p>Mhmud Amin</p>
+                            </div>
+                        </div>
+                        <h3>Give Your Website A New Look And Feel With Themes</h3>
+                        <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates molestiae</h5>
+                        <a href="">Read More <i id="right-blog" class="ri-arrow-right-line"></i></a>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-up">
+                        <img src="images/blog3.jpg" alt="">
+                        <div class="overlay3">
+                            <p>27 aug 2022</p>
+                        </div>
+                    </div>
+                    <div class="card-down">
+                        <div class="flex">
+                            <div class="flex">
+                                <i class="ri-save-line"></i>
+                                <p>Seo</p>
+                            </div>
+                            <div class="line"></div>
+                            <div class="flex">
+                                <i class="ri-user-3-line"></i>
+                                <p>Youssef AB</p>
+                            </div>
+                        </div>
+                        <h3>The Role Of Domain Names In SEO World Explained</h3>
+                        <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Iure nulla dolorem, voluptates molestiae</h5>
+                        <a href="">Read More <i id="right-blog" class="ri-arrow-right-line"></i></a>
+
+                    </div>
+                </div>
+            </div> 
+        </section>
+      <!-- ------------------------End Blog-----------------------------------------  -->  
+      <!-- ------------------------Start Contact-----------------------------------------  -->  
+      <section class="contact" id="contact">
+        <h2>Have Any Questions? Let's Answer Them</h2>
+        <div class="form">
+            <div class="header-form">
+                <div>
+                    <label for="name">Name</label><br>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="name">E-Mail</label><br>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="down-form">
+                <label for="subject">Subject</label>
+                <input type="text">
+                <label for="subject">Your Message</label>
+                <textarea name="" id="" cols="30" rows="8"></textarea>
+                <button>Send Your Message</button>
+            </div>
+        </div>
+       
+      </section>
+
+      <section class="contact2" id="contact2">
+        <h2>Our Offices Around The World</h2>
+        <div class="cards">
+            <div class="card">
+                <h5>New York</h5>
+                <div class="line"></div>
+                <h4>United States, 307 Wilshire, 2nd Av. New York 3516</h4>
+                <div class="flex">
+                    <i class="ri-mail-open-line"></i>
+                    <div>
+                        <h6>Email:</h6>
+                        <p>Info@example.com</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <i class="ri-phone-line"></i>
+                    <div>
+                        <h6>Phone:</h6>
+                        <p>+0123456789</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h5>London</h5>
+                <div class="line"></div>
+                <h4>United Kingdom, 12 Smith Town, 2nd Av. London 2159.</h4>
+                <div class="flex">
+                    <i class="ri-mail-open-line"></i>
+                    <div>
+                        <h6>Email:</h6>
+                        <p>Info@example.com</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <i class="ri-phone-line"></i>
+                    <div>
+                        <h6>Phone:</h6>
+                        <p>+0123456789</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h5>Tokio</h5>
+                <div class="line"></div>
+                <h4>Japan, 307 Chinzo Appy Road, Portsika Way. Tokio 3516.</h4>
+                <div class="flex">
+                    <i class="ri-mail-open-line"></i>
+                    <div>
+                        <h6>Email:</h6>
+                        <p>Info@example.com</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <i class="ri-phone-line"></i>
+                    <div>
+                        <h6>Phone:</h6>
+                        <p>+0123456789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- ------------------------End Contact-----------------------------------------  -->  
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
